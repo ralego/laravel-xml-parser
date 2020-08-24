@@ -1,0 +1,32 @@
+{
+    "name": "ralego/laravel-xml-parser",
+    "description": "Advanced XML parser for Larave",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael Lemus G",
+            "email": "ralego2005@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ralego\\Parser\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ralego\\Parser\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ralego\\Parser\\ParserServiceProvider"
+            ]
+        }
+    }
+}
